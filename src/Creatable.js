@@ -117,7 +117,7 @@ class CreatableSelect extends React.Component {
 		}
 
 		// This value may be needed in between Select mounts (when this.select is null)
-		this.inputValue = input;
+		this.inputValue = onInputChange(input);
 	}
 
 	onInputKeyDown (event) {
